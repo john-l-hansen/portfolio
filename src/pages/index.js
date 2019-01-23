@@ -1,22 +1,58 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import Gallery from '../components/gallery'
-
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout>
-  <Gallery />
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr 1fr',
+      }}
+    >
+      <Link to="/page-2/">
+        <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+      </Link>
+      <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+      <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+      <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+      <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+      <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+    </div>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
 export default IndexPage
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "cover-dashboard.png" }) {
+      ...fluidImage
+    }
+    imageTwo: file(relativePath: { eq: "cover-dashboard.png" }) {
+      ...fluidImage
+    }
+    imageThree: file(relativePath: { eq: "cover-dashboard.png" }) {
+      ...fluidImage
+    }
+  }
+`
