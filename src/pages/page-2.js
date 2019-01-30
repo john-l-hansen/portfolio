@@ -11,9 +11,10 @@ const SecondPage = () => (
   <>
 
   <Header />
-  <Hero>
-  
-  </Hero>
+  <Hero
+  title="A Hero of Sorts 1"
+  background={required('../images/cover-dashboard.png')}
+  />
 
   
   <Layout>
