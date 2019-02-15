@@ -33,10 +33,10 @@ const IndexPage = props => (
       marginTop: `5rem`,
     }}>
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <p>It all started when I was young.</p>
+
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/page-2/">Link Example</Link>
     </div>
   </Layout>
   </>

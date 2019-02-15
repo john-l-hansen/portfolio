@@ -2,15 +2,18 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+
 const Hero = props => (
   <div
+  className=""
     style={{
-      background: `red`,
-      marginBottom: `1.45rem`,
+      marginBottom: '1.45rem',
       width: '100%',
       height: '45rem',
+      backgroundImage: `url(${props.image})`,
     }}
   >
+  
     <div
      style={{
       color: 'white',
@@ -18,10 +21,16 @@ const Hero = props => (
       margin: '0 auto',
     }}
     >
-      <p style={{
+      <h1 style={{
+        color: 'white',
         paddingTop: '279px',
+        textAlign: `center`,
       }}
-      >{props.title} </p> 
+      >{props.title}</h1> 
+     <P style={{
+       textTransform: `uppercase`,
+     }}>Tools</P>
+
     </div>
   </div>
 ) 

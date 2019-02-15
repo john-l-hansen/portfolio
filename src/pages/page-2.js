@@ -7,23 +7,32 @@ import SEO from '../components/seo'
 
 import Header from '../components/header'
 
+import cover from '../images/img-cover.jpg'
+
 const SecondPage = () => (
   <>
-
   <Header />
   <Hero
-  title="A Hero of Sorts 1"
+  title="ACTV8ME DASHBOARD"
+  image={require('../images/img-cover.jpg')}
   />
-
   
   <Layout>
-  
     <SEO title="Page two" />
+    <h1>About</h1>
+    <p
+    style={{
+      maxWidth: `540px`,
+    }}
+    >Design a dashboard that would not only manage the new version of the Mobii application and it's accompanying features, but also all clients that work with actv8me. It was (is) a really fun project with some interesting challenges. I'm currently working on Atomically breaking down components, building a design library and designing for new features.</p>
+    <p style={{
+      
+    }}>
     
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    </p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
+
   </>
 )
 
