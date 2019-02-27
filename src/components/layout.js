@@ -15,7 +15,11 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-          <footer>
+          <footer style={{
+            margin: `0 auto`,
+            width: `540px`,
+            marginTop: `5rem`,
+          }}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>

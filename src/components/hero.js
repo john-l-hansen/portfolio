@@ -26,11 +26,7 @@ const Hero = props => (
         paddingTop: '279px',
         textAlign: `center`,
       }}
-      >{props.title}</h1> 
-     <P style={{
-       textTransform: `uppercase`,
-     }}>Tools</P>
-
+      >{props.title}</h1>
     </div>
   </div>
 ) 
