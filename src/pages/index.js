@@ -25,9 +25,9 @@ const IndexPage = props => (
       </Link>
       <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
       <Img fluid={props.data.imageThree.childImageSharp.fluid} />
-      <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-      <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
-      <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+      <Img fluid={props.data.imageFour.childImageSharp.fluid} />
+      <Img fluid={props.data.imageFive.childImageSharp.fluid} />
+      <Img fluid={props.data.imageSix.childImageSharp.fluid} />
     </div>
     <div style={{
       marginTop: `5rem`,
@@ -62,7 +62,16 @@ export const pageQuery = graphql`
     imageTwo: file(relativePath: { eq: "cover-dashboard.png" }) {
       ...fluidImage
     }
-    imageThree: file(relativePath: { eq: "cover-dashboard.png" }) {
+    imageThree: file(relativePath: { eq: "cover-actv8me-branding.png" }) {
+      ...fluidImage
+    }
+    imageFour: file(relativePath: { eq: "cover-ettika.jpg" }) {
+      ...fluidImage
+    }
+    imageFive: file(relativePath: { eq: "cover-oubly-dashboard.png" }) {
+      ...fluidImage
+    }
+    imageSix: file(relativePath: { eq: "cover-oubly.png" }) {
       ...fluidImage
     }
   }
