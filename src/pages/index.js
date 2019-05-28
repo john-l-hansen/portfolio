@@ -47,13 +47,16 @@ const IndexPage = props => (
     </div>
     <div style={{
       marginTop: `5rem`,
+      width: `640px`,
     }}>
     <h1>About Me</h1>
 
-    <p>I love to draw. in school it was a challenge for me to focus on the current topic and not draw. I used to sell and trade posters, comics and band logos I'd make. I also love computers. in elementary school I became a minor celebrity for making pixel art wallpapers. When I got my first computer I needed room to install a tank game (the PC was very limited as it was a basic business machine) so I started digging around in DOS. I loved how you could manipulate the machine through textual commands, a fascination which would reignite later when I would discover HTML, CSS and JavaScript. I knew I wanted to be in art and technology somehow.</p>
+    <p style={{
+            maxWidth: `540px`,
+    }}>I love to draw. In school it was a challenge for me to focus on the current topic and not draw. I also love computers. in elementary school I became a minor celebrity for making pixel art wallpapers. When I got my first computer I needed room to install a tank game (the PC was very limited as it was a basic business machine) so I started digging around in DOS. I loved how you could manipulate the machine through textual commands, a fascination which would reignite later when I would discover HTML, CSS and JavaScript. I knew I wanted to be in art and technology somehow.</p>
 
     <p>
-    However, I struggled with how to get there; I was not very good at nor did I enjoy the traditional art classes I was taking. I started floundering in high school and lost hope on pursuing art. Looking for direction and always having had a desire to join the military I enlisted in the Navy. Doing well in the Navy I came to a crossroads: to stay in and go for a commission or leave and utilize the GI Bill for art school - I chose the latter.
+    However, I struggled with how to get there; I was not very good at nor did I enjoy the traditional art classes I was taking. I started floundering in high school and lost hope on pursuing art. Looking for direction and always having had a desire to join the military I enlisted in the Navy. Doing well in the Navy I came to a crossroads: stay in and go for a commission or leave and utilize the GI Bill for art school - I chose the latter.
     </p>
 
     <p>
@@ -77,6 +80,9 @@ const IndexPage = props => (
     <p>
     Feel free to reach out for any reason.
     </p>
+
+
+    {/* --------- FORM */}
 
     <form name="contact" method="POST" data-netlify="true">
   <p>
