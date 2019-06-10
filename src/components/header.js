@@ -17,11 +17,15 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ 
+        margin: 0,
+        textAlign: `center`,
+      }}>
         <Link
           to="/"
           style={{
-            color: `#cccccc`,
+            textAlign: `center`,
+            color: `#000000`,
             textDecoration: `none`,
           }}
         >
@@ -37,7 +41,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `John Hansen`,
 }
 
 export default Header

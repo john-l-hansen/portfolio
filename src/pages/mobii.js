@@ -39,12 +39,7 @@ const SecondPage = () => (
             lineHeight: `1.6rem`,
           }}
         >
-          I helped the design and engineering team redesign the dashboard to
-          improve the user experience, optimize existing features, and do so in
-          a way that lays the foundation for future features. Working closely
-          with the VP of Design, content creators and stakeholders, I collected
-          and refined requirements, designed and prototyped solutions, created
-          actionable tickets and followed them through to production.
+        
         </p>
 
         <ul

@@ -13,6 +13,18 @@ const IndexPage = props => (
   <Layout>
     
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+
+
+    <div style={{
+      width: `640px`,
+      margin: `5rem auto 0 auto`,
+      textAlign: `center`,
+    }}>
+    <h2>Primary Work</h2>
+
+    <p>A collection of some of my recent work.</p>
+    </div>
+    
     <div
       style={{
         display: 'grid',
@@ -36,7 +48,7 @@ const IndexPage = props => (
       <Img fluid={props.data.imageFour.childImageSharp.fluid} />
       </Link>
 
-      <Link to="/oubly-dashbaord/">
+      <Link to="/oubly-dashboard/">
       <Img fluid={props.data.imageFive.childImageSharp.fluid} />
       </Link>
 
@@ -48,23 +60,22 @@ const IndexPage = props => (
     <div style={{
       marginTop: `5rem`,
       width: `640px`,
+      margin: `5rem auto`,
     }}>
-    <h1>About Me</h1>
+    <h2>About Me</h2>
 
-    <p style={{
-            maxWidth: `540px`,
-    }}>I love to draw. In school it was a challenge for me to focus on the current topic and not draw. I also love computers. in elementary school I became a minor celebrity for making pixel art wallpapers. When I got my first computer I needed room to install a tank game (the PC was very limited as it was a basic business machine) so I started digging around in DOS. I loved how you could manipulate the machine through textual commands, a fascination which would reignite later when I would discover HTML, CSS and JavaScript. I knew I wanted to be in art and technology somehow.</p>
+    <p>I love to draw. In school it was a challenge for me to focus on the current topic and not draw. I also love computers. in elementary school I became a minor celebrity for making pixel art wallpapers. When I got my first computer I loved digging around in DOS. It fascinated me how you could manipulate the machine through textual commands, a fascination which would reignite later when I would discover HTML, CSS and JavaScript. I knew I wanted to be in art and technology somehow.</p>
 
     <p>
     However, I struggled with how to get there; I was not very good at nor did I enjoy the traditional art classes I was taking. I started floundering in high school and lost hope on pursuing art. Looking for direction and always having had a desire to join the military I enlisted in the Navy. Doing well in the Navy I came to a crossroads: stay in and go for a commission or leave and utilize the GI Bill for art school - I chose the latter.
     </p>
 
     <p>
-    Have a passion for gaming, I initially started studying game design. One of my classmates that I often studied with told me about her program, graphic design. I asked about it and she told me how it was about branding, typography, web and all the goodness. My heart leapt, I didn't know this was a thing. I immediately changed my focus to design and it was exactly what I'd been looking for.
+    Having a passion for gaming, I initially started studying game design. One of my classmates that I often studied with told me about her program, graphic design. I asked about it and she told me how it was about branding, typography, web and all the goodness. My heart leapt, I didn't know this was a thing. I immediately changed my focus to design and it was exactly what I'd been looking for.
     </p>
 
     <p>
-    After school I joined a startup and haven't stopped since! My mind is continually blown by this constantly evolving field. When not designing, I'll probably be gaming, cooking or playing guitar.
+    After school I joined a startup and haven't stopped since! When not designing, I'll probably be gaming, cooking or playing guitar.
     </p>
 
     <h2>
@@ -127,7 +138,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "cover-dashboard.png" }) {
+    imageOne: file(relativePath: { eq: "cover-mobii.png" }) {
       ...fluidImage
     }
     imageTwo: file(relativePath: { eq: "cover-dashboard.png" }) {
