@@ -10,10 +10,9 @@ import Header from '../components/header'
 import cover from '../images/hero-actv8me-dashboard.png'
 
 const SecondPage = () => (
-  <>
+  <div>
     <Header />
     <Hero
-      title="ACTV8ME DASHBOARD"
       image={require('../images/hero-actv8me-dashboard.png')}
     />
 
@@ -25,13 +24,13 @@ const SecondPage = () => (
           margin: `0 auto`,
         }}
       >
-        <h2
+        <h1
           style={{
             marginTop: `6rem`,
           }}
         >
-          About
-        </h2>
+          Mobii Application and System
+        </h1>
         <p
           style={{
             maxWidth: `540px`,
@@ -39,48 +38,95 @@ const SecondPage = () => (
             lineHeight: `1.6rem`,
           }}
         >
-        
+          Mobii is an application that delivers content through audio
+          fingerprints, watermarks, geofences and beacons. Initially, I was
+          tasked to redesign the iOS and Android platforms. Once completed, I
+          then designed a lighter, fluid version built in React Native that
+          would be easily digestable for clients.
         </p>
+
+        <p
+          style={{
+            maxWidth: `540px`,
+            margin: `1rem auto 0`,
+            lineHeight: `1.6rem`,
+          }}
+        >
+          During the processs I created user flows, wireframes and lo-fi and
+          hi-fi design comps. Then I worked with the engineers and the VP of
+          Product to get it built. To keep everything in sync I started building
+          a design system, converted all styling to SASS variables so they were
+          closer to elements I defined. But then I learned about design tokens.
+          So I generated design tokens and applied them to the React project so
+          we could white label rapidly and with minimal effort.
+        </p>
+
+        <h2
+          style={{
+            marginTop: `4rem`,
+          }}
+        >
+          Tools
+        </h2>
 
         <ul
           style={{
             listStyle: `none`,
             paddingLeft: `0`,
-            marginLeft: `0`, 
-            marginTop: `4rem`,
+            marginLeft: `0`,
             lineHeight: `1.5rem`,
             textTransform: `uppercase`,
           }}
         >
           <li>
-            <strong>versioning:</strong> abstract + github{' '}
+            <strong>version control:</strong> abstract + git
           </li>
           <li>
-            <strong>prototype:</strong> sketch + invision studio
+            <strong>design:</strong> sketch
           </li>
+          <li>
+            <strong>prototype:</strong> invision studio
+          </li>
+          
           <li>
             <strong>hand-off:</strong> invision
           </li>
           <li>
-            <strong>code:</strong> angular material
+            <strong>code:</strong> react
           </li>
-        </ul> 
+          <li>
+            <strong>theming:</strong> sass + design tokens
+          </li>
+          <li>
+            <strong>documentation:</strong> invision dsm
+          </li>
+        </ul>
 
         <h2
           style={{
             marginTop: `4rem`,
           }}
         >
-          Process
+        Design Ops
         </h2>
 
-        <h3
+        <p
           style={{
-            marginTop: `2rem`,
+            maxWidth: `540px`,
+            margin: `0 auto`,
+            lineHeight: `1.6rem`,
           }}
         >
-          Organize   Requirements
-        </h3>
+        When I joined the project I saw that the team was using Photoshop for design, Dropbox for holding projects and printed booklets for stakeholder feedback and developer hand-off. I thought a new set of tools that I loved using might be better for us. So I worked to transfer the design tool of choice to Sketch and hand-off method using Zeplin, which we adopted. At some point someone made a mistake and overrode the main design file in Dropbox and we lost a significant chunk of work. I introduced our team to Abstract so that multiple could safely work
+        </p>
+
+        <h2
+          style={{
+            marginTop: `4rem`,
+          }}
+        >
+        Emphasis on Content
+        </h2>
 
         <p
           style={{
@@ -89,100 +135,17 @@ const SecondPage = () => (
             lineHeight: `1.6rem`,
           }}
         >
-          Business wrote documentation on what they wanted and Engineering
-          described what was currently implemented while Design had
-          documentation sort of in between the two, including additional desired
-          features. I took them all and identified what was implemented and what
-          was needed.
+        The design I was assigned to attempt to improve utilized a list as the primary content delivery. I thought, and was later validated, that having so many items delivered at once was overwhelming and not conducive to nudging the user to the desired content.
         </p>
 
-        <h3
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          User Inquiries
-        </h3>
-
-        <p
-          style={{
-            maxWidth: `540px`,
-            margin: `0 auto`,
-            lineHeight: `1.6rem`,
-          }}
-        >
-          After knowing what was needed, I proceeded to ask questions and
-          observe current users of the product to identify pain points. A few
-          quickly surfaced - this gave my what was required for the project and
-          places where I could improve User Experience.
-        </p>
-
-        <h3
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          User Flows
-        </h3>
-
-        <p
-          style={{
-            maxWidth: `540px`,
-            margin: `0 auto`,
-            lineHeight: `1.6rem`,
-          }}
-        >
-          Creating user flows of features to visualize my new design
-          ideas helped me check myself and was also extremely valuable as
-          a sort of glimpse-map in future tickets for developers.
-        </p>
-
-        <h3
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          Protopying
-        </h3>
-
-        <p
-          style={{
-            maxWidth: `540px`,
-            margin: `0 auto`,
-            lineHeight: `1.6rem`,
-          }}
-        >
-          User flows transformed into wireframes that I prototyped, using them
-          to communicate my decisions in action to the design team. This was also
-          another, <em>more intimate</em>, check on the logic and smoothness of the flow.
-        </p>
-
-        <h3
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          Visual Design
-        </h3>
-
-        <p
-          style={{
-            maxWidth: `540px`,
-            margin: `0 auto`,
-            lineHeight: `1.6rem`,
-          }}
-        >
-        Create and apply color palette, typography and spatial relationships. To check again if I was suitably solving some of the pain points mentioned in user research, I refined prototypes and got feedback from the content team.
-        </p>
-
-        <h3
+        <h2
           style={{
             marginTop: `2rem`,
           }}
         >
           Implementation
-        </h3>
-     
+        </h2>
+
         <p
           style={{
             maxWidth: `540px`,
@@ -190,10 +153,12 @@ const SecondPage = () => (
             lineHeight: `1.6rem`,
           }}
         >
-        Clean up, prepare and organize flows in InVision, create tickets and attach the two together and hand-off. Responsible for making sure design is implemented as intended and work with developers to get features to Production. 
+          Clean up, prepare and organize flows in InVision, create tickets and
+          attach the two together and hand-off. Responsible for making sure
+          design is implemented as intended and work with developers to get 
+          features to Production.
         </p>
 
-          
         <h2
           style={{
             marginTop: `4rem`,
@@ -216,7 +181,7 @@ const SecondPage = () => (
         <Link to="/">Back</Link>
       </div>
     </Layout>
-  </>
+  </div>
 )
 
 export default SecondPage
