@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `John Hansen`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A selection of design work from John Hansen, a Los Angeles based designer.`,
     author: `@gatsbyjs`,
   },
   plugins: [

@@ -14,12 +14,23 @@ const IndexPage = props => (
     
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
+    <div>
+        <div className="Hero">
+          <div className="HeroGroup">
+            <h1>John Hansen</h1>
+            <p>Digitial designer working in UI/UX, product, systems, and front-end development.</p>
+            <a to="/#">Watch the Video</a>
+          </div>
+        </div>
+      </div>
+
 
     <div style={{
       width: `640px`,
       margin: `5rem auto 0 auto`,
       textAlign: `center`,
     }}>
+
     <h2>Primary Work</h2>
 
     <p>A collection of some of my recent work.</p>
