@@ -28,12 +28,20 @@
 }
 
 .Header button {
+  background: red;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
   padding: 8px 20px;
   font-size: 20px;
-  background: red;
-  border-radius: 10px;
-  border: none;
   font-weight: 700;
   outline: none;
-  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.Header button:hover {
+  background: blue;
+  color: blanchedalmond;
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+  transform: translateY(-4px);
 }
