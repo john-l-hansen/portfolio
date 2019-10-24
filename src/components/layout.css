@@ -14,7 +14,8 @@ a {
 }
 
 .Hero {
-  height: 920px;
+  height: 100vh;
+  /* height: 920px; */
   background: url('../images/hero-img-code.jpg');
   background-size: cover;
   background-position: center;
@@ -49,5 +50,19 @@ a {
   margin: 0 auto;
   padding: 150px 50px;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 100px 20px;
+  }
+
+  .Hero h1 {
+    font-size: 40px;
+  }
+
+  .Hero p {
+    font-size: 24px;
+  }
 }
 

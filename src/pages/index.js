@@ -8,130 +8,158 @@ import SEO from '../components/seo'
 
 const IndexPage = props => (
   <>
-  <Header />
+    <Header />
 
-  <Layout>
-    
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <div>
+      <div>
         <div className="Hero">
           <div className="HeroGroup">
             <h1>John Hansen</h1>
-            <p>Digitial designer working in UI/UX, product, systems, and front-end development.</p>
-            <a to="/#">Watch the Video</a>
+            <p>
+              Digitial designer working in UI/UX, product, systems, and
+              front-end development.
+            </p>
+            <Link to="/">Watch the Video</Link>
           </div>
         </div>
       </div>
 
+      <div
+        style={{
+          width: `640px`,
+          margin: `5rem auto 0 auto`,
+          textAlign: `center`,
+        }}
+      >
+        <h2>Primary Work</h2>
 
-    <div style={{
-      width: `640px`,
-      margin: `5rem auto 0 auto`,
-      textAlign: `center`,
-    }}>
+        <p>A collection of some of my recent work.</p>
+      </div>
 
-    <h2>Primary Work</h2>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr 1fr',
+          marginTop: `5rem`,
+        }}
+      >
+        <Link to="/mobii/">
+          <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+        </Link>
 
-    <p>A collection of some of my recent work.</p>
-    </div>
-    
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr',
-        marginTop: `5rem`,
-      }}
-    >
-      <Link to="/mobii/">
-        <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-      </Link>
+        <Link to="/actv8me-dashboard">
+          <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+        </Link>
 
-      <Link to="/actv8me-dashboard">
-      <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
-      </Link>
+        <Link to="/actv8me-branding/">
+          <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+        </Link>
 
-      <Link to="/actv8me-branding/">
-      <Img fluid={props.data.imageThree.childImageSharp.fluid} />
-      </Link>
+        <Link to="/ettika/">
+          <Img fluid={props.data.imageFour.childImageSharp.fluid} />
+        </Link>
 
-      <Link to="/ettika/">
-      <Img fluid={props.data.imageFour.childImageSharp.fluid} />
-      </Link>
+        <Link to="/oubly-dashboard/">
+          <Img fluid={props.data.imageFive.childImageSharp.fluid} />
+        </Link>
 
-      <Link to="/oubly-dashboard/">
-      <Img fluid={props.data.imageFive.childImageSharp.fluid} />
-      </Link>
+        <Link to="/oubly-product">
+          <Img fluid={props.data.imageSix.childImageSharp.fluid} />
+        </Link>
+      </div>
+      <div
+        style={{
+          marginTop: `5rem`,
+          width: `640px`,
+          margin: `5rem auto`,
+        }}
+      >
+        <h2>About Me</h2>
 
-      <Link to="/oubly-product">
-      <Img fluid={props.data.imageSix.childImageSharp.fluid} />
-      </Link>
+        <p>
+          I love to draw. In school it was a challenge for me to focus on the
+          current topic and not draw. I also love computers. in elementary
+          school I became a minor celebrity for making pixel art wallpapers.
+          When I got my first computer I loved digging around in DOS. It
+          fascinated me how you could manipulate the machine through textual
+          commands, a fascination which would reignite later when I would
+          discover HTML, CSS and JavaScript. I knew I wanted to be in art and
+          technology somehow.
+        </p>
 
-    </div>
-    <div style={{
-      marginTop: `5rem`,
-      width: `640px`,
-      margin: `5rem auto`,
-    }}>
-    <h2>About Me</h2>
+        <p>
+          However, I struggled with how to get there; I was not very good at nor
+          did I enjoy the traditional art classes I was taking. I started
+          floundering in high school and lost hope on pursuing art. Looking for
+          direction and always having had a desire to join the military I
+          enlisted in the Navy. Doing well in the Navy I came to a crossroads:
+          stay in and go for a commission or leave and utilize the GI Bill for
+          art school - I chose the latter.
+        </p>
 
-    <p>I love to draw. In school it was a challenge for me to focus on the current topic and not draw. I also love computers. in elementary school I became a minor celebrity for making pixel art wallpapers. When I got my first computer I loved digging around in DOS. It fascinated me how you could manipulate the machine through textual commands, a fascination which would reignite later when I would discover HTML, CSS and JavaScript. I knew I wanted to be in art and technology somehow.</p>
+        <p>
+          Having a passion for gaming, I initially started studying game design.
+          One of my classmates that I often studied with told me about her
+          program, graphic design. I asked about it and she told me how it was
+          about branding, typography, web and all the goodness. My heart leapt,
+          I didn't know this was a thing. I immediately changed my focus to
+          design and it was exactly what I'd been looking for.
+        </p>
 
-    <p>
-    However, I struggled with how to get there; I was not very good at nor did I enjoy the traditional art classes I was taking. I started floundering in high school and lost hope on pursuing art. Looking for direction and always having had a desire to join the military I enlisted in the Navy. Doing well in the Navy I came to a crossroads: stay in and go for a commission or leave and utilize the GI Bill for art school - I chose the latter.
-    </p>
+        <p>
+          After school I joined a startup and haven't stopped since! When not
+          designing, I'll probably be gaming, cooking or playing guitar.
+        </p>
 
-    <p>
-    Having a passion for gaming, I initially started studying game design. One of my classmates that I often studied with told me about her program, graphic design. I asked about it and she told me how it was about branding, typography, web and all the goodness. My heart leapt, I didn't know this was a thing. I immediately changed my focus to design and it was exactly what I'd been looking for.
-    </p>
+        <h2>Tool Set</h2>
 
-    <p>
-    After school I joined a startup and haven't stopped since! When not designing, I'll probably be gaming, cooking or playing guitar.
-    </p>
+        <p>
+          Although I dabble with myriad tools, I find myself using the following
+          most:
+        </p>
 
-    <h2>
-    Tool Set
-    </h2>
+        <h2>Contact</h2>
 
-    <p>
-    Although I dabble with myriad tools, I find myself using the following most:
-    </p>
+        <p>Feel free to reach out for any reason.</p>
 
-    <h2>Contact</h2>
+        {/* --------- FORM */}
 
-    <p>
-    Feel free to reach out for any reason.
-    </p>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Role:{' '}
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
 
-
-    {/* --------- FORM */}
-
-    <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-
-
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
-    <Link to="/mobii/">Link Example</Link>
-    </div>
-  </Layout>
+        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
+        <Link to="/mobii/">Link Example</Link>
+      </div>
+    </Layout>
   </>
 )
 
